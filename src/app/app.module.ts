@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { SwiperModule } from 'swiper/angular';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
