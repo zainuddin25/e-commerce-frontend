@@ -1,1 +1,12 @@
-<p>list-category works!</p>
+<div class="container mx-auto pt-24 px-40">
+    <div class="grid grid-cols-10">
+        <div class="mt-2" *ngFor="let categorys of dataCategory">
+            <div class="flex justify-center w-full">
+                <div class="w-auto group">
+                    <img src="http://localhost:3222/category/image/{{categorys.icon_category}}" class="w-20 border-2 rounded-md p-4 group-hover:border-none duration-300" />
+                    <p class="text-center mt-2 text-sm group-hover:hidden duration-300">{{categorys.category_name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

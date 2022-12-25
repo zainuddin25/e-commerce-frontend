@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-category.component.css']
 })
 export class ListCategoryComponent {
+
+  dataCategory: any = []
+
+  constructor(private httpClient : HttpClient) {}
+
+  ngOnInit() {
+    this.getCategory()
+  }
+
+  getCategory() {
+    this.httpClient.get<any>(`http://localhost:3222/category`, {
+      observe: 'response'
+    })
+    .subscribe(
+      response => {
+        // console.log(response.body.data)
+        this.dataCategory = response.body.data
+      }
+    )
+  }
 
 }

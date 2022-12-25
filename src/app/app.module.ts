@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { SwiperModule } from 'swiper/angular';
 import { MatMenuModule } from '@angular/material/menu';
+import { HttpClientModule } from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { ListCategoryComponent } from './components/list-category/list-category.
     HeaderComponent,
     LandingPageComponent,
     LoginPageComponent,
+    // ListCategoryComponent
     ListCategoryComponent
   ],
   imports: [
@@ -27,6 +29,7 @@ import { ListCategoryComponent } from './components/list-category/list-category.
     BrowserAnimationsModule,
     MatMenuModule,
     SwiperModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
