@@ -3,17 +3,34 @@
         <div class="w-1/4">
             <h1 class="font-bold text-xl">TokTok</h1>
         </div>
-        <div class="w-2/4 relative">
-            <input class="outline-none border border-white bg-black rounded px-4 w-full text-sm py-3" placeholder="Search Product" (input)="onChangeSearch($event)" />
-            <p class="absolute top-[13px] right-4 cursor-pointer text-sm"><i class="fa-solid fa-magnifying-glass"></i></p>
+        <div class="w-2/4 relative flex justify-center">
+            <ul class="flex justify-center">
+                <li>
+                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
+                        New Product
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
+                        For You
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
+                        Trending Product
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
+                        Discount 
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="w-1/4">
             <div class="flex justify-end items-center">
-                <span class="material-symbols-outlined mr-6">shopping_cart</span>
-                <button class="flex items-center border py-2 px-4 border-white rounded cursor-pointer">
-                    <span class="material-symbols-outlined">person</span>
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
-                </button>
+                <button class="border border-white text-teal-500 text-sm py-2 px-8 hover:bg-teal-500/30 mr-3">Login</button>
+                <button class="border border-white text-teal-500 text-sm py-2 px-8 hover:bg-teal-500/30 ml-3">Signup</button>
             </div>
         </div>
     </div>

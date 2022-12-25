@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ListCategoryComponent } from './components/list-category/list-category.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ListCategoryComponent
   ],
   imports: [
     BrowserModule,
