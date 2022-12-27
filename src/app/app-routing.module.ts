@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './pages/dashboard-user/dashboard.component';
 import { MessageNotAdminComponent } from './components/message-not-admin/message-not-admin.component';
 
 const routes: Routes = [
@@ -20,7 +20,7 @@ const routes: Routes = [
     component: LoginPageComponent
   }, 
   {
-    path: 'dashboard-admin',
+    path: 'dashboard-admin-user',
     component: DashboardComponent
   },
   {

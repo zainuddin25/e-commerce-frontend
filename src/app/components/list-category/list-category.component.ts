@@ -22,7 +22,6 @@ export class ListCategoryComponent {
     })
     .subscribe(
       response => {
-        // console.log(response.body.data)
         this.dataCategory = response.body.data
       }
     )

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import jwtDecode from 'jwt-decode'
+import { UsersTabelComponent } from 'src/app/components/users-tabel/users-tabel.component';
 
 @Component({
   selector: 'app-dashboard',

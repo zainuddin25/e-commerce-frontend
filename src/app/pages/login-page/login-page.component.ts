@@ -39,7 +39,7 @@ export class LoginPageComponent {
         localStorage.setItem('accessToken', response.accessToken)
         const decode: any = jwtDecode(response.accessToken)
         if (decode.role[0].name === 'admin') {
-          this.router.navigate(['/dashboard-admin'])
+          this.router.navigate(['/dashboard-admin-user'])
         }
       }
     )
