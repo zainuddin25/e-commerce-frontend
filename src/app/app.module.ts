@@ -22,6 +22,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { UsersTabelComponent } from './components/users-tabel/users-tabel.component';
 import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 import { BottomSheetRoleOptionComponent } from './components/bottom-sheet-role-option/bottom-sheet-role-option.component';
+import { DashboardProductComponent } from './pages/dashboard-product/dashboard-product.component';
+import { ProductTabelComponent } from './components/product-tabel/product-tabel.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { BottomSheetRoleOptionComponent } from './components/bottom-sheet-role-o
     UsersTabelComponent,
     HeaderAdminComponent,
     BottomSheetRoleOptionComponent,
+    DashboardProductComponent,
+    ProductTabelComponent,
   ],
   imports: [
     BrowserModule,
