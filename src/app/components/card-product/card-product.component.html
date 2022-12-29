@@ -1,1 +1,18 @@
-<p>card-product works!</p>
+<div class="w-full pb-20">
+    <div class="flex justify-between items-center">
+        <h1 class="font-bold text-2xl">Product Recommendations For You</h1>
+        <p class="text-sm text-black cursor-pointer pl-4 border-b-2 py-1 border-black">View All Product</p>
+    </div>
+    <div class="grid grid-cols-5 gap-4 mt-10">
+        <a routerLink="#" class="w-full shadow bg-white rounded" *ngFor="let products of dataProducts">
+            <img src="http://localhost:3222/product/image/{{products.image}}" class="w-full rounded-t" />
+            <div class="my-4 mx-2">
+                <p class="text-sm font-semibold" id="title-product">{{products.product_name}}</p>
+                <div class="w-full mt-6 flex justify-between">
+                    <p class="text-xs font-semibold">Rp {{products.price}}</p>
+                    <p class="text-xs font-semibold cursor-pointer">Add To Cart</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

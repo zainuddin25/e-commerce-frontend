@@ -11,12 +11,17 @@ export class HeaderComponent {
   username: string = ''
   photo_profile: string = ''
   dashbaordLink: string = ''
+  visibilityIcon: string = ''
 
   ngOnInit() {
     const token : any = localStorage.getItem('accessToken')
     const decode : any = jwtDecode(token)
     this.photo_profile = decode.photo_profile
     this.username = decode.username
+    // console.log(decode.role[0].name)
+    if (decode.role[0].name === 'user') {
+      this.visibilityIcon = 'hidden'
+    }
   }
 
 }

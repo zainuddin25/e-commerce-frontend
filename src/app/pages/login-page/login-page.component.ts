@@ -40,7 +40,7 @@ export class LoginPageComponent {
         const decode: any = jwtDecode(value.accessToken)
         if (decode.role[0].name === 'admin') {
           this.router.navigate(['/dashboard-admin-user'])
-        } else if(decode.role[0].name === 'user') {
+        } else {
           this.router.navigate(['/landing-page'])
         }
       },

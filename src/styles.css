@@ -6,3 +6,7 @@
 body, html {
     font-family: 'Poppins';
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

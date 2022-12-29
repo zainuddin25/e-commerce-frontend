@@ -27,6 +27,7 @@ import { BottomSheetRoleOptionComponent } from './components/bottom-sheet-role-o
 import { DashboardProductComponent } from './pages/dashboard-product/dashboard-product.component';
 import { ProductTabelComponent } from './components/product-tabel/product-tabel.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { DetailProductsComponent } from './pages/detail-products/detail-products.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CardProductComponent } from './components/card-product/card-product.com
     DashboardProductComponent,
     ProductTabelComponent,
     CardProductComponent,
+    DetailProductsComponent,
   ],
   imports: [
     BrowserModule,
