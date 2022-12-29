@@ -35,12 +35,17 @@ export class LoginPageComponent {
       password: this.formGroup.value.password
     })
     .subscribe(
-      response => {
-        localStorage.setItem('accessToken', response.accessToken)
-        const decode: any = jwtDecode(response.accessToken)
+      value => {
+        localStorage.setItem('accessToken', value.accessToken)
+        const decode: any = jwtDecode(value.accessToken)
         if (decode.role[0].name === 'admin') {
           this.router.navigate(['/dashboard-admin-user'])
+        } else if(decode.role[0].name === 'user') {
+          this.router.navigate(['/landing-page'])
         }
+      },
+      error => {
+        alert(error.error.message)
       }
     )
   }

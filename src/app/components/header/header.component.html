@@ -1,37 +1,35 @@
-<div class="w-full py-6 bg-black text-white fixed top-0">
-    <div class="container mx-auto flex justify-between px-4 items-center">
-        <div class="w-1/4">
-            <h1 class="font-bold text-xl">TokTok</h1>
-        </div>
-        <div class="w-2/4 relative flex justify-center">
-            <ul class="flex justify-center">
-                <li>
-                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
-                        New Product
+<div class="container mx-auto fixed top-0 left-0 right-0 bg-white px-8 py-4">
+    <div class="flex justify-between items-center">
+        <h1 class="px-10 bg-black py-2 text-white font-bold">E Commerce</h1>
+        <div>
+            <ul class="flex gap-6 text-sm">
+                <li class="border-b-[3px] py-1 w-24 text-center border-white hover:border-black duration-200">
+                    <a routerLink="#">
+                        Home
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
-                        For You
+                <li class="border-b-[3px] py-1 w-24 text-center border-white hover:border-black duration-200">
+                    <a routerLink="#">
+                        Product
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
-                        Trending Product
+                <li class="border-b-[3px] py-1 w-24 text-center border-white hover:border-black duration-200">
+                    <a routerLink="#">
+                        Discount
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="mx-5 text-sm hover:text-teal-500 border-b-2 border-black hover:border-teal-500 py-2 duration-200">
-                        Discount 
+                <li class="border-b-[3px] py-1 w-24 text-center border-white hover:border-black duration-200">
+                    <a routerLink="#">
+                        Populer
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="w-1/4">
-            <div class="flex justify-end items-center">
-                <button class="border border-white text-teal-500 text-sm py-2 px-8 hover:bg-teal-500/30 mr-3">Login</button>
-                <button class="border border-white text-teal-500 text-sm py-2 px-8 hover:bg-teal-500/30 ml-3">Signup</button>
-            </div>
+        <div class="flex items-center">
+            <span class="material-symbols-outlined" mat-raised-button matTooltip="Dashboard" matTooltipClass="example-tooltip-uppercase" aria-label="Button that shows a red tooltip">dashboard</span>
+            <span class="material-symbols-outlined px-6" mat-raised-button matTooltip="Notifications" matTooltipClass="example-tooltip-uppercase" aria-label="Button that shows a red tooltip">notifications</span>
+            <span class="material-symbols-outlined mr-6" mat-raised-button matTooltip="Cart" matTooltipClass="example-tooltip-uppercase" aria-label="Button that shows a red tooltip">shopping_cart</span>
+            <img src="http://localhost:3222/users/image/{{photo_profile}}" class="w-8 ml-2" />
         </div>
     </div>
 </div>

@@ -5,6 +5,7 @@ import { SwiperModule } from 'swiper/angular';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms';
@@ -24,6 +25,7 @@ import { HeaderAdminComponent } from './components/header-admin/header-admin.com
 import { BottomSheetRoleOptionComponent } from './components/bottom-sheet-role-option/bottom-sheet-role-option.component';
 import { DashboardProductComponent } from './pages/dashboard-product/dashboard-product.component';
 import { ProductTabelComponent } from './components/product-tabel/product-tabel.component';
+import { CardProductComponent } from './components/card-product/card-product.component';
 
 
 @NgModule({
@@ -42,6 +44,7 @@ import { ProductTabelComponent } from './components/product-tabel/product-tabel.
     BottomSheetRoleOptionComponent,
     DashboardProductComponent,
     ProductTabelComponent,
+    CardProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { ProductTabelComponent } from './components/product-tabel/product-tabel.
     ReactiveFormsModule,
     MatExpansionModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

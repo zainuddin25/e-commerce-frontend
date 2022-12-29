@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import jwtDecode from 'jwt-decode';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  status: any = "loginMenu"
+  username: string = ''
+  photo_profile: string = ''
+  dashbaordLink: string = ''
 
-  onChangeSearch(event : any) {
-    console.log(event.target.value)
+  ngOnInit() {
+    const token : any = localStorage.getItem('accessToken')
+    const decode : any = jwtDecode(token)
+    this.photo_profile = decode.photo_profile
+    this.username = decode.username
   }
 
 }

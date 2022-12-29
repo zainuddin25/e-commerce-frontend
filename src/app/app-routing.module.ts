@@ -9,7 +9,7 @@ import { DashboardProductComponent } from './pages/dashboard-product/dashboard-p
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'landing-page',
+    redirectTo: 'login-page',
     pathMatch: 'full'
   },
   {
