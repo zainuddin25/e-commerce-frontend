@@ -1,0 +1,18 @@
+<div class="w-full pb-20">
+    <div class="flex justify-between items-center">
+        <h1 class="font-bold text-2xl">Product Recommendations For You</h1>
+        <p class="text-sm text-black cursor-pointer pl-4 border-b-2 py-1 border-black">View All Product</p>
+    </div>
+    <div class="grid grid-cols-5 gap-4 mt-10">
+        <a routerLink="#" class="w-full shadow bg-white rounded" *ngFor="let discount of dataProductDiscount">
+            <img src="http://localhost:3222/product/image/{{discount.product.image}}" class="w-full rounded-t" />
+            <div class="my-4 mx-2">
+                <p class="text-sm font-semibold" id="title-product">{{discount.product_name}}</p>
+                <div class="w-full mt-6">
+                    <p class="text-xs font-semibold">{{discount.product.price - (discount.discount * discount.product.price) | currency:'Rp ':'symbol':'3.0' }} / <span class="text-slate-500 font-medium line-through">{{discount.product.price | currency:'Rp ':'symbol':'3.0'}}</span></p>
+                    <button class="border w-full mt-2 text-xs py-2 bg-black text-white rounded">Add To Cart</button>
+                </div> 
+            </div>
+        </a>
+    </div>
+</div>

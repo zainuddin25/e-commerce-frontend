@@ -9,7 +9,7 @@
             <div class="my-4 mx-2">
                 <p class="text-sm font-semibold" id="title-product">{{products.product_name}}</p>
                 <div class="w-full mt-6 flex justify-between">
-                    <p class="text-xs font-semibold">Rp {{products.price}}</p>
+                    <p class="text-xs font-semibold">{{products.price | currency:'Rp ':'symbol':'3.0'}}</p>
                     <p class="text-xs font-semibold cursor-pointer">Add To Cart</p>
                 </div>
             </div>
