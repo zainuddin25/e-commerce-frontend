@@ -28,7 +28,9 @@ import { DashboardProductComponent } from './pages/dashboard-product/dashboard-p
 import { ProductTabelComponent } from './components/product-tabel/product-tabel.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { DetailProductsComponent } from './pages/detail-products/detail-products.component';
-import { CardDiscountComponent } from './card-discount/card-discount.component';
+import { CardDiscountComponent } from './components/card-discount/card-discount.component';
+import { SallerDashboardComponent } from './pages/saller-dashboard/saller-dashboard.component';
+import { SidebarSallerComponent } from './components/sidebar-saller/sidebar-saller.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { CardDiscountComponent } from './card-discount/card-discount.component';
     CardProductComponent,
     DetailProductsComponent,
     CardDiscountComponent,
+    SallerDashboardComponent,
+    SidebarSallerComponent,
   ],
   imports: [
     BrowserModule,

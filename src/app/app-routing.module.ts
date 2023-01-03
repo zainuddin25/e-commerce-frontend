@@ -5,6 +5,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardComponent } from './pages/dashboard-user/dashboard.component';
 import { MessageNotAdminComponent } from './components/message-not-admin/message-not-admin.component';
 import { DashboardProductComponent } from './pages/dashboard-product/dashboard-product.component';
+import { SallerDashboardComponent } from './pages/saller-dashboard/saller-dashboard.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'error-not-admin',
     component: MessageNotAdminComponent
+  },
+  {
+    path: 'saller-dashboard',
+    component: SallerDashboardComponent
   }
 ];
 

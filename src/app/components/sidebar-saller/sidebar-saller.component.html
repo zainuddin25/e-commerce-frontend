@@ -1,0 +1,34 @@
+<div class="h-[10%] flex items-center justify-center">
+    <h1 class="text-base font-bold px-4">TOKTOK DASHBOARD ADMIN</h1>
+</div>
+
+<a routerLink="/saller-dashboard" class="px-6 flex items-center py-4 bg-white rounded-md my-2 font-semibold shadow">
+    <span class="material-symbols-outlined pr-2 text-xl">dashboard</span>
+    Dashboard
+</a>
+
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Destination
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+  
+      <!--  -->
+
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Day of the trip
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+      <!--  -->
+      <h1>Halo</h1>
+
+    </mat-expansion-panel>
+  
+  </mat-accordion>
